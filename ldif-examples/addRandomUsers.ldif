@@ -1,0 +1,11 @@
+# for the first record, dc must be the db we added.
+dn: o=batta corp, dc=osi
+objectClass: dcObject
+objectClass: organization
+dc: osi
+o: batta corp
+
+# dn: dc=sa3id
+# objectClass: dcObject
+# objectClass: organization
+# dc: 

@@ -1,0 +1,6 @@
+dn: cn=commonname,ou=special_org_unit,dc=osema
+# spedifing the change type.
+changeType: modify
+# specifiying the modification type (adding attribute).
+add: telephoneNumber
+telephoneNumber: +33 00990 82890

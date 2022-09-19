@@ -1,0 +1,20 @@
+# adding the branche with this dn
+dn: dc=osema
+# using definitions of these object classes.
+objectClass: dcObject
+objectClass: organization
+# defining mandotory attributes.
+o: BattaCorp
+# we specify the parent context here.
+dc: osema
+
+
+# # creating a manager
+# dn: cn=nounou,dc=osema
+# objectClass: organizationalRole
+# cn: nounou
+# description: just a manager in the organization.
+
+dn: ou=special_org_unit,dc=osema
+objectClass: organizationalUnit
+ou: special_org_unit

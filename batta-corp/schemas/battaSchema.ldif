@@ -1,0 +1,23 @@
+dn: cn=battaSchema,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: battaSchema
+olcAttributeTypes: ( 1.3.6.1.4.1.16832.666.1.1
+ NAME 'nickname'
+ DESC 'The nickname in the batta corp.'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15)
+olcAttributeTypes: ( 1.3.6.1.4.1.16832.666.1.2
+ NAME 'funnyScale'
+ DESC 'The funny scale in batta corp.'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15)
+olcAttributeTypes: ( 1.3.6.1.4.1.16832.666.1.3
+ NAME 'winRate'
+ DESC 'win rate in checkers.'
+ EQUALITY caseIgnoreMatch
+ SYNTAX 1.3.6.1.4.1.1466.115.121.1.15)
+olcObjectClasses: ( 1.3.6.1.4.1.16832.666.2.1
+ NAME 'battaMember'
+ SUP top STRUCTURAL 
+ MUST nickname 
+ MAY ( funnyScale $ winRate ))

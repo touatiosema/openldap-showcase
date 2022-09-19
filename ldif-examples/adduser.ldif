@@ -1,0 +1,4 @@
+dn: cn=commonname,ou=special_org_unit,dc=osema
+objectClass: person
+sn: surname
+cn: commonname
